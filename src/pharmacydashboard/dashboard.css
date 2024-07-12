@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column; /* Ensure body is a column layout */
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#medicineCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.medicine-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    margin: 10px; /* Add margin to ensure space between cards */
+}
+
+.medicine-card h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.medicine-card .details {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.medicine-card .price {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.medicine-card .quantity {
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+.medicine-card input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.medicine-card button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.medicine-card button:hover {
+    background-color: #45a049;
+}
+
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-button {
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #333; /* Adjust button text color */
+    display: flex;
+    align-items: center; /* Center the icon and count vertically */
+    position: relative; /* Ensure relative positioning for absolute positioning of count */
+}
+
+.cart-button img {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.cart-button #cartCount {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+
+.search-button,
+.view-orders-button {
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #333; /* Adjust button text color */
+}
+
+.search-button img {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.view-orders-button {
+    background-color: #40C057;
+    color: white;
+}
+
+.view-orders-button:hover {
+    background-color: #2d9045;
+}

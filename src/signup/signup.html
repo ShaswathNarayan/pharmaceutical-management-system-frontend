@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="signup.css"> <!-- Corrected path to CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="register-box">
+            <h2>Register</h2>
+            <form id="registerForm" onsubmit="return handleRegistration(event)">
+                <div class="textbox">
+                    <input type="text" placeholder="Username" name="username" required oninput="checkUsernameAvailability()">
+                    <div id="username-message" class="validation-message"></div>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" name="password" required oninput="validatePassword()" onpaste="validatePassword()">
+                    <div id="password-message" class="validation-message"></div>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Confirm Password" name="confirm_password" required oninput="validateConfirmPassword()" onpaste="validateConfirmPassword()">
+                    <div id="confirm-password-message" class="validation-message"></div>
+                </div>
+                <div class="textbox">
+                    <input type="email" placeholder="Email" name="email" required oninput="validateEmail()">
+                    <div id="email-message" class="validation-message"></div>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <p>Already have an account? <a href="../login/login.html">Login here</a></p> <!-- Adjusted relative path to login.html -->
+            </form>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modalMessage"></p>
+            <button onclick="redirectToLogin()">Go to Login</button>
+        </div>
+    </div>
+    <script src="signup.js"></script> <!-- Corrected path to JavaScript file -->
+</body>
+</html>
