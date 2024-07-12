@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css"> <!-- Link your CSS file -->
+</head>
+<body>
+    <h1>Your Cart</h1>
+    <div id="cartItemsContainer">
+        <!-- Cart items will be displayed here dynamically -->
+    </div>
+    <div class="total-container">
+        <h2 id="totalPrice">Total (excl. GST): ₹0.00</h2>
+        <h2 id="totalGST">Total GST (12%): ₹0.00</h2>
+        <h2 id="finalPrice">Final Price (incl. GST): ₹0.00</h2>
+    </div>
+    <button onclick="confirmOrder()">Place Order</button>
+
+    <!-- Pop-up message for order success -->
+    <div id="orderSuccessPopup" class="popup hidden">
+        <p>Order successful!</p>
+    </div>
+
+    <script src="cart.js"></script> <!-- Link your JavaScript file -->
+</body>
+</html>
