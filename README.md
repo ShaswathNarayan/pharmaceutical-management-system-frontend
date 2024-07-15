@@ -51,19 +51,34 @@ Follow these steps to get the project up and running on your local machine.
 The project is structured as follows:
 ```
 pharmaceutical-management-frontend/
-├── login/
-│   ├── login.html
-│   ├── login.css
-│   └── login.js
-├── signup/
-│   ├── signup.html
-│   ├── signup.css
-│   └── signup.js
-├── pharmacydashboard/
-│   ├── dashboard.html
-│   ├── dashboard.css
-│   └── dashboard.js
-└── README.md
+└── src/
+    ├── login/
+    │   ├── login.html       # Login page HTML
+    │   ├── login.css        # Login page CSS
+    │   └── login.js         # Login page JavaScript
+    │
+    ├── signup/
+    │   ├── signup.html      # Signup page HTML
+    │   ├── signup.css       # Signup page CSS
+    │   └── signup.js        # Signup page JavaScript
+    │
+    ├── pharmacydashboard/
+    │   ├── dashboard.html   # Pharmacy dashboard HTML
+    │   ├── dashboard.css    # Pharmacy dashboard CSS
+    │   └── dashboard.js     # Pharmacy dashboard JavaScript
+    │
+    ├── cart/
+    │   ├── cart.html        # Cart page HTML
+    │   ├── cart.css         # Cart page CSS
+    │   └── cart.js          # Cart page JavaScript
+    │
+    ├── orders/
+    │   ├── orders.html      # Orders page HTML
+    │   ├── orders.css       # Orders page CSS
+    │   └── orders.js        # Orders page JavaScript
+    │
+    └── README.md            # Project README file
+
 ```
 
 ## Usage
